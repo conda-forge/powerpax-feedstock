@@ -1,5 +1,5 @@
 {% set name = "powerpax" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/powerpax-{{ version }}.tar.gz
-  sha256: f4f2a40a3531b9d2aae5c6fcdb5016fcf4f8bf6c384d78a29247ea5b831df328
+  sha256: caf53b157b18947529e2902dadec877c66469daca87063fe2c4aba7a20cc01bf
 
 build:
   noarch: python
