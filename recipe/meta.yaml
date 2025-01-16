@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/powerpax-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/powerpax-{{ version }}.tar.gz
   sha256: 64cc6843a68286a5ed3557e2b5b55cd2266b2064a8067d97fae1adb059eae9b8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - jax >=0.4.6
 
 test:
@@ -34,6 +34,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/karlotness/powerpax
