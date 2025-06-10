@@ -15,7 +15,6 @@ Documentation: https://powerpax.readthedocs.io/
 
 A collection of utility functions for JAX.
 
-
 Current build status
 ====================
 
