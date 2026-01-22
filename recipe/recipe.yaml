@@ -1,6 +1,6 @@
 context:
   name: "powerpax"
-  version: "0.2.0"
+  version: "0.2.1"
   python_min: "3.10"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 7f9dec24fcfd6e2bbd3e1faba4b466bf92394128326d3ebc00852c556c997885
+  sha256: 90e1316a3455cf2a67d7a455fdce59fcf746ecf6456e69b4b8ebcf0f256525bb
 
 build:
   number: 0
